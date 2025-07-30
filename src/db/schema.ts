@@ -1,5 +1,12 @@
 import { sqliteTable, text, integer } from "drizzle-orm/sqlite-core";
 
+export const userData = sqliteTable("userData", {
+  userId: text("user_id")
+    .notNull()
+    .primaryKey()
+    .references(() => user.id, { onDelete: "cascade" }),
+});
+
 export const user = sqliteTable("user", {
   id: text("id").primaryKey(),
   name: text("name").notNull(),
