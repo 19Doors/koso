@@ -10,6 +10,11 @@ export const MODELS = [
     value: "gemini",
   },
   {
+    id: "gemini-2.5-flash-lite",
+    name: "Gemini Flash 2.5 Lite",
+    value: "gemini"
+  },
+  {
     id: "gemini-2.0-flash-lite",
     name: "Gemini 2.0 flash lite",
     value: "gemini",
